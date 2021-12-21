@@ -3,14 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+         #
+#    By: aparolar <aparolar@student.42madrid.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/04/08 17:36:51 by aparolar          #+#    #+#              #
-<<<<<<< HEAD
-#    Updated: 2021/12/21 17:39:47 by aparolar         ###   ########.fr        #
-=======
-#    Updated: 2021/08/12 17:14:10 by aparolar         ###   ########.fr        #
->>>>>>> b7f5487b98ae10bce67daafbb3858fcc525e3351
+#    Created: 2021/12/22 00:14:29 by aparolar          #+#    #+#              #
+#    Updated: 2021/12/22 00:18:45 by aparolar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -127,8 +123,7 @@ so:			re
 			$(CC) -fPIC $(CFLAGS) $(SRCS)
 			gcc -shared -o libft.so $(OBJS)
 
-fclean:		
-			@make -s clean
+fclean:		clean
 			@echo "\033[1;1;42m                                                                    \033[0m"
 			@echo "\033[1;1;44m                                                                    \033[0m"
 			@echo "\033[1;1;44m                                                                    \033[0m"
@@ -140,5 +135,11 @@ fclean:
 			@rm -rf $(NAME)
 
 re:			clean fclean all
+
+git_push:	fclean
+			git add .
+			git status
+			git commit -m "Update $(shell date)"
+			git push
 
 .PHONY: 	all clean fclean re

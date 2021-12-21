@@ -6,14 +6,24 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 11:53:45 by aparolar          #+#    #+#             */
-/*   Updated: 2021/12/21 17:41:22 by aparolar         ###   ########.fr       */
+/*   Updated: 2021/12/22 00:09:41 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "philo.h"
 
 #define AINT_MAX "2147483647"
 #define AINT_MIN "-2147483648"
+
+static int	ft_strlen(char *str)
+{
+	int	len;
+
+	len = 0;
+	while (str[len])
+		len++;
+	return (len);
+}
 
 static int	all_digit(char *str)
 {
@@ -50,15 +60,12 @@ int	ft_is_valid_aint(char *str)
 
 	tstr = str;
 	cstr = AINT_MAX;
-	if (*tstr != '+')
+	if (*tstr == '+' || *tstr == '-')
 	{
 		if (*tstr == '-')
 			cstr = &AINT_MIN[1];
-		if (*tstr == '-')
-			tstr++;
-	}
-	else
 		tstr++;
+	}
 	if (ft_strlen(tstr) <= ft_strlen(cstr)
 		&& all_digit(tstr)
 		&& inside_limit(tstr, cstr))
