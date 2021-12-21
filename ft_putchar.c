@@ -6,13 +6,13 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 14:58:36 by aparolar          #+#    #+#             */
-/*   Updated: 2021/07/26 14:13:54 by aparolar         ###   ########.fr       */
+/*   Updated: 2021/10/20 10:54:08 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putchar(char	c)
+int	ft_putchar(char c)
 {
 	return (write(1, &c, 1));
 }
