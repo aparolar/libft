@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 15:48:46 by aparolar          #+#    #+#             */
-/*   Updated: 2021/12/21 17:40:33 by aparolar         ###   ########.fr       */
+/*   Updated: 2021/12/22 11:59:20 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,7 +117,7 @@ long		ft_atol(const char *str);
 char		*ft_ltoa(long n);
 
 /*
-**  strings
+**   strings
 */
 
 char		*ft_strrem(const char *s, size_t start, size_t len);
