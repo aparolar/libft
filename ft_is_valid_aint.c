@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 11:53:45 by aparolar          #+#    #+#             */
-/*   Updated: 2021/12/23 21:46:44 by aparolar         ###   ########.fr       */
+/*   Updated: 2021/12/24 00:07:18 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,5 @@ int	ft_is_valid_aint(char *str)
 		&& all_digit(str)
 		&& inside_limit(str, cstr))
 		return (1);
-	else
-		return (0);
+	return (0);
 }
