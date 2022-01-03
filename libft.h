@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 15:48:46 by aparolar          #+#    #+#             */
-/*   Updated: 2021/12/22 11:59:20 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/01/03 11:46:41 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -148,5 +148,12 @@ t_extlst	*ft_extlstaddbefore(t_extlst *lst, void *content);
 t_extlst	*ft_extlstaddafter(t_extlst *lst, void *content);
 void		ft_extlstdelone(t_extlst *lst, void (*del)(void*));
 void		ft_extlstclear(t_extlst *lst, void (*del)(void*));
+
+/*
+**  Array function
+*/
+
+void		ft_array_free(char **array);
+size_t		ft_array_count(char **array);
 
 #endif

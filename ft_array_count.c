@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_array_free.c                                    :+:      :+:    :+:   */
+/*   ft_array_count.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aparolar <aparolar@student.42madrid.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/03 11:38:15 by aparolar          #+#    #+#             */
-/*   Updated: 2022/01/03 11:45:35 by aparolar         ###   ########.fr       */
+/*   Created: 2022/01/03 11:42:02 by aparolar          #+#    #+#             */
+/*   Updated: 2022/01/03 11:44:04 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_array_free(char **array)
+size_t	ft_array_count(char **array)
 {
-	char	**tmp;
+	size_t	count;
 
 	if (!array)
-		return ;
-	tmp = array;
-	while (*tmp)
+		return (0);
+	count = 0;
+	while (*array)
 	{
-		free(*tmp);
-		tmp++;
+		array++;
+		count++;
 	}
-	free(array);
+	return (count);
 }
