@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 13:06:16 by aparolar          #+#    #+#             */
-/*   Updated: 2022/01/24 19:24:35 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/01/25 21:07:40 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strreplace(char *str, char *seek, char *replace)
 			tmp = seek;
 			while (*find && *tmp && *(find++) == *tmp)
 				tmp++;
-			ret = ft_strnstr()
+			//una vez encontrada la string seek pasar punteros a una funcion que devuelva la string hasta el momento remplazado el seek por el replace ¡¡Cuidado posibles leaks!!
 		}
 	}
 }
