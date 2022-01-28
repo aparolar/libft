@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 15:48:46 by aparolar          #+#    #+#             */
-/*   Updated: 2022/01/03 11:59:10 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/01/26 18:19:31 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,6 +124,7 @@ char		*ft_strrem(const char *s, size_t start, size_t len);
 char		*ft_strcat(const char *s1, const char *s2);
 int			ft_is_valid_aint(char *str);
 char		*ft_strcmp(char *s1, char *s2);
+char		*ft_strreplace(char *str, char *search, char *replace);
 
 /*
 **  Files

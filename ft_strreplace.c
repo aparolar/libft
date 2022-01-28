@@ -6,29 +6,70 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 13:06:16 by aparolar          #+#    #+#             */
-/*   Updated: 2022/01/25 21:07:40 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/01/26 20:07:19 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strreplace(char *str, char *seek, char *replace)
+static int	ft_str_count_substr(char *str, char *sstr)
 {
-	char	*find;
-	char	*ret;
+	int		ret;
 	char	*tmp;
 
-	if (!str || !seek || !replace)
+	if (!str || !sstr)
 		return (0);
-	while (*str)
+	ret = 0;
+	tmp = ft_strnstr(str, sstr, ft_strlen(str));
+	while (tmp && *tmp)
 	{
-		if (*str == *seek)
+		tmp = ft_strnstr(tmp, sstr, ft_strlen(tmp));
+		if (tmp && *tmp)
 		{
-			find = str;
-			tmp = seek;
-			while (*find && *tmp && *(find++) == *tmp)
-				tmp++;
-			//una vez encontrada la string seek pasar punteros a una funcion que devuelva la string hasta el momento remplazado el seek por el replace ¡¡Cuidado posibles leaks!!
+			tmp += ft_strlen(sstr);
+			ret++;
 		}
 	}
+	return (ret);
+}
+
+static char	*ft_allocstr(char *str, char *ss, char *sr)
+{
+	char	*ret;
+	int		slen;
+
+	slen = ft_str_count_substr(str, ss);
+	slen *= ft_strlen(sr) - ft_strlen(ss);
+	ret = malloc(sizeof(char *) * ((ft_strlen(str) + slen)));
+	ret[ft_strlen(str) + slen] = 0;
+	return (ret);
+}
+
+char	*ft_strreplace(char *str, char *search, char *replace)
+{
+	char	*ret;
+	char	*tret;
+	char	*next;
+
+	if (!str || !*str || !search || !*search || !replace || !*replace)
+		return (0);
+	ret = ft_allocstr(str, search, replace);
+	tret = ret;
+	next = str;
+	while (next && *next)
+	{
+		next = ft_strnstr(next, search, ft_strlen(next));
+		if (next)
+		{
+			ft_memcpy(tret, str, next - str);
+			tret = tret + (next - str);
+			ft_memcpy(tret, replace, ft_strlen(replace));
+			tret = tret + ft_strlen(replace);
+			str = next + ft_strlen(search);
+			next = str;
+		}
+		else if (ft_strlen(str) > 0)
+			ft_memcpy(tret, str, ft_strlen(str));
+	}
+	return (ret);
 }

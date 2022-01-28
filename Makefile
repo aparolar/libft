@@ -6,7 +6,7 @@
 #    By: aparolar <aparolar@student.42madrid.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/22 00:14:29 by aparolar          #+#    #+#              #
-#    Updated: 2022/01/03 11:59:27 by aparolar         ###   ########.fr        #
+#    Updated: 2022/01/26 19:09:37 by aparolar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,17 +73,17 @@ SRCS		=	ft_memset.c\
 				ft_array_free.c\
 				ft_array_count.c\
 				ft_strcmp.c\
-
+				ft_strreplace.c\
 
 OBJS		=	$(SRCS:.c=.o)
 
-CC			=	@gcc $(FLAGS) -I. -O3
+CC			=	@gcc $(DBGFLAGSX) -I. #-O3
 
 FLAGS		=	-Wall -Wextra -Werror
 
 DBGFLAGS	=	$(FLAGS) -g3
 
-DEBFLAGSX	=	$(FLAGS) -g3 -fsanitize=address
+DBGFLAGSX	=	$(FLAGS) -g3 -fsanitize=address
 
 NAME		=	libft.a
 
