@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 13:06:16 by aparolar          #+#    #+#             */
-/*   Updated: 2022/01/26 20:07:19 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/01/29 00:35:47 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ static char	*ft_allocstr(char *str, char *ss, char *sr)
 	int		slen;
 
 	slen = ft_str_count_substr(str, ss);
+	if (!slen)
+		return (0);
 	slen *= ft_strlen(sr) - ft_strlen(ss);
 	ret = malloc(sizeof(char *) * ((ft_strlen(str) + slen)));
 	ret[ft_strlen(str) + slen] = 0;
