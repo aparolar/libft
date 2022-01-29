@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 13:06:16 by aparolar          #+#    #+#             */
-/*   Updated: 2022/01/29 00:36:39 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/01/29 01:04:29 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ char	*ft_strreplace(char *str, char *search, char *replace)
 	ret = ft_allocstr(str, search, replace);
 	tret = ret;
 	next = str;
-	while (next && *next)
+	while (ret && next && *next)
 	{
 		next = ft_strnstr(next, search, ft_strlen(next));
 		if (next)
