@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_array_count.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aparolar <aparolar@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 11:42:02 by aparolar          #+#    #+#             */
-/*   Updated: 2022/01/03 11:44:04 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/03/05 18:33:27 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
