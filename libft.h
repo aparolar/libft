@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 15:48:46 by aparolar          #+#    #+#             */
-/*   Updated: 2022/01/26 18:19:31 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/23 13:20:40 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char		**ft_split(char const *s, char c);
 
 /*
-**  Bonus
+**  Lists
 */
 
 t_list		*ft_lstnew(void *content);
@@ -106,6 +106,8 @@ void		ft_lstdelone(t_list *lst, void (*del)(void*));
 void		ft_lstclear(t_list **lst, void (*del)(void*));
 void		ft_lstiter(t_list *lst, void (*f)(void*));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*));
+void		ft_lstiter_if(t_list *lst, void *content,
+				void (*f)(void *), int (*cmp)(void *, void *));
 
 /*
 **  Especial

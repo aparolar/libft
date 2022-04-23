@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aparolar <aparolar@student.42madrid.c      +#+  +:+       +#+         #
+#    By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/22 00:14:29 by aparolar          #+#    #+#              #
-#    Updated: 2022/01/26 19:09:37 by aparolar         ###   ########.fr        #
+#    Updated: 2022/04/23 13:21:08 by aparolar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,6 +74,7 @@ SRCS		=	ft_memset.c\
 				ft_array_count.c\
 				ft_strcmp.c\
 				ft_strreplace.c\
+				ft_lstiter_if.c\
 
 OBJS		=	$(SRCS:.c=.o)
 
