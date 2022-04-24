@@ -8,6 +8,6 @@ LISTS_SRC	=	ft_lstadd_back \
 				ft_lstlast \
 				ft_lstmap \
 				ft_lstnew \
-				ft_lstsize 
+				ft_lstsize \
 
 SRC			+=	$(addprefix $(LISTS_PATH), $(LISTS_SRC))
