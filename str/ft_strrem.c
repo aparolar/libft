@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrem.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aparolar <aparolar@student.42madrid.c      +#+  +:+       +#+        */
+/*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/10 23:30:47 by aparolar          #+#    #+#             */
-/*   Updated: 2021/05/10 23:31:52 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/25 17:11:26 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_strrem(const char *s, size_t start, size_t len)
 {

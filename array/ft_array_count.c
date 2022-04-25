@@ -6,11 +6,11 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 11:42:02 by aparolar          #+#    #+#             */
-/*   Updated: 2022/03/05 18:33:27 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/25 17:11:26 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 size_t	ft_array_count(char **array)
 {

@@ -6,11 +6,11 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/12 11:07:43 by aparolar          #+#    #+#             */
-/*   Updated: 2021/04/20 21:52:33 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/25 17:11:26 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

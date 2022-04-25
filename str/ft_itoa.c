@@ -6,11 +6,11 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/16 17:01:26 by aparolar          #+#    #+#             */
-/*   Updated: 2021/04/17 16:10:50 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/25 17:11:26 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_itoa(int n)
 {

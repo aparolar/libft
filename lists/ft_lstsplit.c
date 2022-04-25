@@ -6,11 +6,11 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 09:36:41 by aparolar          #+#    #+#             */
-/*   Updated: 2022/04/25 10:53:44 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/25 17:11:26 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 t_list	**ft_lstsplit(t_list *lst, int (*f)(void *))
 {
