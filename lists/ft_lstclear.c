@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/20 13:31:34 by aparolar          #+#    #+#             */
-/*   Updated: 2022/04/25 17:11:26 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/25 17:14:23 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*ndel;
 
-	if (lst && del)
+	if (lst && *lst && del)
 	{
 		ndel = *lst;
 		while (*lst)
