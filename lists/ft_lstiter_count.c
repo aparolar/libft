@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 10:35:45 by aparolar          #+#    #+#             */
-/*   Updated: 2022/04/25 10:38:03 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/25 11:53:43 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,5 @@ int	ft_lstiter_count(t_list *lst, int (*f)(void *))
 			lst = lst->next;
 		}
 	}
+	return (ret);
 }
