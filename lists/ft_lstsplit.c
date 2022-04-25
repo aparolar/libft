@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 09:36:41 by aparolar          #+#    #+#             */
-/*   Updated: 2022/04/25 09:56:43 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/25 10:23:25 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*ft_lstsplit(t_list *lst, int (*f)(void *))
 	t_list	*ret;
 	t_list	*last;
 
-	ft_lstadd_back(&ret, ft_lstnew(ft_calloc(1, sizeof(t_list *))));
+	ft_lstadd_back(&ret, ft_lstnew(ft_calloc(1, sizeof(t_list))));
 	if (lst && f)
 	{
 		while (lst)
@@ -30,7 +30,7 @@ t_list	*ft_lstsplit(t_list *lst, int (*f)(void *))
 			}
 			else
 			{
-				ft_lstadd_back(&ret, ft_lstnew(ft_calloc(1, sizeof(t_list *))));
+				ft_lstadd_back(&ret, ft_lstnew(ft_calloc(1, sizeof(t_list))));
 			}
 			lst = lst->next;
 		}
