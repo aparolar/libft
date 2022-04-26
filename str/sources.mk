@@ -6,6 +6,7 @@ STR_SRC	=	ft_atoi \
 			ft_split \
 			ft_strcat \
 			ft_strchr \
+			ft_strchrs \
 			ft_strcmp \
 			ft_strdup \
 			ft_strjoin \
