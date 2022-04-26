@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/24 13:06:16 by aparolar          #+#    #+#             */
-/*   Updated: 2022/04/25 17:11:26 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/26 16:55:14 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ char	*ft_strreplace(char *str, char *search, char *replace)
 	char	*tret;
 	char	*next;
 
-	if (!str || !*str || !search || !*search || !replace || !*replace)
+	if (!str || !*str || !search || !*search || !replace)
 		return (0);
 	ret = ft_allocstr(str, search, replace);
 	tret = ret;
