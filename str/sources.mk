@@ -4,6 +4,7 @@ STR_SRC	=	ft_atoi \
 			ft_itoa \
 			ft_ltoa \
 			ft_split \
+			ft_str_free \
 			ft_strcat \
 			ft_strchr \
 			ft_strchrs \
