@@ -6,21 +6,22 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 14:50:31 by aparolar          #+#    #+#             */
-/*   Updated: 2022/04/27 15:01:45 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/27 16:49:26 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-char	*ft_str_free(char *new, char *old)
+char	*ft_str_free(char **new, char **old)
 {
-	if (!old && !new)
+	if (!*old && !*new)
 		return (NULL);
-	if (!old && new)
-		return (new);
-	if (!new && old)
-		return (old);
-	if (new != old)
-		free(old);
-	return (new);
+	if (!*old && *new)
+		return (*new);
+	if (!*new && *old)
+		return (*old);
+	if (*new != *old)
+		free(*old);
+	*old = NULL;
+	return (*new);
 }
