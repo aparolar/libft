@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 14:50:31 by aparolar          #+#    #+#             */
-/*   Updated: 2022/04/27 14:53:29 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/04/27 15:01:45 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ char	*ft_str_free(char *new, char *old)
 {
 	if (!old && !new)
 		return (NULL);
-	if (!old)
+	if (!old && new)
 		return (new);
-	if (!new)
+	if (!new && old)
 		return (old);
 	if (new != old)
 		free(old);
