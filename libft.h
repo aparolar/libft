@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 15:48:46 by aparolar          #+#    #+#             */
-/*   Updated: 2022/04/27 16:53:02 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/05/02 09:35:34 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,6 +119,7 @@ void		ft_lstiter_var(t_list *lst, void (*f)(void *, void **), void **var);
 int			ft_lstiter_bpa_if(t_list *lst, int (*f)(void *, void *, void *));
 //t_list		**ft_lstsplit(t_list *lst, int (*f)(void *));
 int			ft_lstiter_count(t_list *lst, int (*f)(void *));
+void		ft_lstinsert_next(t_list *lst, t_list *new);
 
 /*
 **  Other Functions
