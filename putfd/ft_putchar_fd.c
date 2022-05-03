@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/16 16:38:08 by aparolar          #+#    #+#             */
-/*   Updated: 2022/04/25 17:11:26 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/05/03 23:34:43 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	if (write(fd, &c, 1) >= 0)
-		c += 0;
+	write(fd, &c, 1);
 }
