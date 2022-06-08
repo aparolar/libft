@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 16:16:36 by aparolar          #+#    #+#             */
-/*   Updated: 2022/04/25 17:11:26 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/06/08 11:48:35 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	ft_isalnum(int c)
 {
 	if (ft_isdigit(c) || ft_isalpha(c))
-		return (c);
+		return (1);
 	return (0);
 }

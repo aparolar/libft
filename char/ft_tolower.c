@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aparolar <aparolar@student.42madrid>       +#+  +:+       +#+        */
+/*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/08 15:53:50 by aparolar          #+#    #+#             */
-/*   Updated: 2021/04/08 15:53:51 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/06/08 11:49:02 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
