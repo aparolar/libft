@@ -6,7 +6,7 @@
 #    By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/22 00:14:29 by aparolar          #+#    #+#              #
-#    Updated: 2022/04/24 15:42:15 by aparolar         ###   ########.fr        #
+#    Updated: 2022/11/21 16:35:34 by aparolar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ SRCS		=	$(addsuffix .c, $(SRC))
 
 OBJS		=	$(SRCS:.c=.o)
 
-CC			=	gcc $(DBGFLAGSX) -I. #-O3
+CC			=	gcc -O3 #$(DBGFLAGSX) -I. #-O3
 
 FLAGS		=	-Wall -Wextra -Werror
 
